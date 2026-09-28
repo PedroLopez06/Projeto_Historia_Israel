@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de contato e opinião sobre o Clube de Regatas do Flamengo.">
+    <title>Contato - Clube de Regatas do Flamengo</title>
+</head>
+<body>
+    <header>
+        <h1>Contato e opinião</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="historia.html">História</a>
+            <a href="conquistas.html">Conquistas</a>
+            <a href="multimidia.html">Multimídia</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formulário de opinião</h2>
+            <p>
+                Preencha o formulário para deixar sua opinião sobre a história do Flamengo. Os campos
+                marcados como obrigatórios precisam ser preenchidos.
+            </p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </p>
+
+                    <p>
+                        <label for="data">Data do envio:</label>
+                        <input type="date" id="data" name="data" required>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sobre o Flamengo</legend>
+
+                    <p>
+                        <label for="jogador">Jogador favorito:</label>
+                        <input list="jogadores" id="jogador" name="jogador" placeholder="Escolha ou digite um nome">
+                        <datalist id="jogadores">
+                            <option value="Zico">
+                            <option value="Júnior">
+                            <option value="Adílio">
+                            <option value="Gabigol">
+                            <option value="Arrascaeta">
+                            <option value="Everton Ribeiro">
+                            <option value="Diego">
+                            <option value="Romário">
+                            <option value="Ronaldo">
+                            <option value="Ronaldinho Gaúcho">
+                            <option value="Everton Cebolinha">
+                            <option value="Paquetá">
+                            <option value="Gerson">
+                            <option value="Bruno Henrique">
+                            <option value="Pedro">
+                            <option value="Vitinho">
+                            <option value="Saul">
+                            <option value="Varella">
+                            <option value="Plata">
+                            <option value="Erik Pulgar">
+                        </datalist>
+                    </p>
+
+                    <p>
+                        <label for="interesse">Nível de interesse por futebol (0 a 10):</label>
+                        <input type="range" id="interesse" name="interesse" min="0" max="10" value="5">
+                    </p>
+
+                    <p>
+                        <label for="opiniao">Opinião sobre a história do clube:</label>
+                    </p>
+                    <p>
+                        <textarea id="opiniao" name="opiniao" rows="5" cols="40" placeholder="Escreva sua opinião" required></textarea>
+                    </p>
+
+                    <p>
+                        <label for="arquivo">Enviar arquivo (foto ou documento):</label>
+                        <input type="file" id="arquivo" name="arquivo">
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabalho acadêmico de HTML. Tema: Clube de Regatas do Flamengo.</p>
+        <p>Desenvolvido por Pedro Henrique.</p>
+    </footer>
+</body>
+</html>
+
